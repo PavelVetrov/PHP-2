@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Encryptor/Decryptor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Message Encryptor/Decryptor</h1>
+        <label for="message">Message:</label>
+        <input type="text" id="message" placeholder="Enter your message">
+
+        <label for="key">Key:</label>
+        <input type="text" id="key" placeholder="Enter encryption key">
+
+        <label for="mode">Mode:</label>
+        <select id="mode">
+            <option value="encrypt">Encrypt</option>
+            <option value="decrypt">Decrypt</option>
+        </select>
+
+        <button onclick="processMessage()">Process</button>
+
+        <h2>Result:</h2>
+        <textarea id="result" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
